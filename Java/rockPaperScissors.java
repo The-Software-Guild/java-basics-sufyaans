@@ -7,8 +7,8 @@ class RockPaperScissorsLoop
 {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
-        Random rand = new Random();
+        
+        //Variables
         int val;
         String userChoice = "";
         String computerChoice = "";
@@ -31,11 +31,12 @@ class RockPaperScissorsLoop
         for(int i=0;i< xRounds;i++)
         {
             //User choice
+            Scanner scanner = new Scanner(System.in);
             System.out.print("\nPlease choose (1) Rock, (2) Paper, or (3) Scissors: ");
-            
-            userChoice = sc.nextLine();
+            userChoice = scanner.nextLine();
             
             // Computer choice
+            Random rand = new Random();
             val = rand.nextInt(3);
             
             if(val == 0)
