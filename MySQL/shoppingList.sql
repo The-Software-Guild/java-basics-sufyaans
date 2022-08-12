@@ -30,6 +30,6 @@ CREATE TABLE IF NOT EXISTS shoppingList(
 -- #shoppingList
 -- insert into shoppingList (listName, quantity, checkbox) values ('Wednesday list', 2, True);
         
-select * FROM shoppingList;
+#select * FROM shoppingList;
 
 
