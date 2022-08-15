@@ -4,7 +4,6 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class HealthyHearts {
-
     public static void main(String[] args){
         //Variabls
         int age;
@@ -23,6 +22,5 @@ public class HealthyHearts {
         //Outputs
         System.out.println("\nYour maximum heart rate should be " + maxRate + " beats per minute.");
         System.out.println("\nYour target HR Zone is " + minZone +"-" + maxZone + " beats per minute.");
-    }
-    
+    }   
 }
