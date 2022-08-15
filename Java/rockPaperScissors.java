@@ -21,8 +21,11 @@ class RockPaperScissorsLoop
     
         int xRounds = rounds.nextInt();
         if (xRounds < 1 || xRounds > 10){
+
+
             System.out.print("Invalid Entry, rounds should be between 1-10");
-            System.exit(0);
+        }
+            
 
         for(int i=0;i< xRounds;i++)
         {
@@ -113,18 +116,18 @@ class RockPaperScissorsLoop
             // Finding final winner
             if(userWins > computerWins)
             {
-                System.out.println("User wins");
+                System.out.println("User wins overall");
             }
             else if (userWins < computerWins)
             {
-                System.out.println("Computer wins");
+                System.out.println("Computer wins overall");
             }
             else
             {
-                System.out.println("Draw");
+                System.out.println("overall draw");
             }
 
-        }
+        
     }
 }
 
