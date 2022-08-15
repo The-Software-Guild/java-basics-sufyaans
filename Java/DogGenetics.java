@@ -10,7 +10,7 @@ public class DogGenetics {
         //Variables
         String dogName = "";
         String[] breeds = {"St. Bernard", "Chihuahua", "Dramatic RedNosed Asian Pug", "Common Cur", "King Doberman"};
-        int pecentage = 100;
+        int maxPercentage = 100;
         int breedPercent = 0;
         Random rand = new Random();
 
@@ -20,16 +20,21 @@ public class DogGenetics {
         System.out.println("\nWell then, I have this highly reliable report on Sir Fluffy McFlufferkins Esquire's prestigious background right here.");
         System.out.println("\n" +dogName + " is: ");
 
+        if (dogName.isEmpty()){
+            System.out.println("dog name can't be empty");
+            System.exit(0);
+        }
+
         for (int i = 0; i < 5; i++) {
 
             String breed = "";
             breed = breeds[i];
 
             if (i != 4) {
-                breedPercent = rand.nextInt(pecentage);
-                pecentage -= breedPercent;
+                breedPercent = rand.nextInt(maxPercentage);
+                maxPercentage -= breedPercent;
             } else {
-                breedPercent = pecentage;
+                breedPercent = maxPercentage;
             }
             System.out.println(breed + ": " + breedPercent + "%");
         }
