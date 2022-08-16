@@ -18,14 +18,11 @@ class RockPaperScissorsLoop
         // User chooses number of rounds
         Scanner rounds = new Scanner(System.in); 
         System.out.print("Enter number of rounds: ");
-    
         int xRounds = rounds.nextInt();
+
         if (xRounds < 1 || xRounds > 10){
-
-
             System.out.print("Invalid Entry, rounds should be between 1-10");
         }
-            
 
         for(int i=0;i< xRounds;i++)
         {
@@ -110,6 +107,7 @@ class RockPaperScissorsLoop
             }
 
             // Display score
+            //Add score for number of draws
             System.out.println("User Score: " + userWins + " Computer Score: " + computerWins);
         }
             
