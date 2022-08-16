@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class HealthyHearts {
     public static void main(String[] args){
-        //Variabls
+        //Variables
         int age;
         int maxHeartRate = 220;
 
